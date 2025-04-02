@@ -20,6 +20,8 @@
     
     - *[Evaluation and structured data](https://www.kaggle.com/code/hongjaemin/day-1-evaluation-and-structured-output)*
 
+        - bonus whitepaper on *[Evaluating Large Language Models](./neurips_evaluation.pdf)* .
+
 - Make sure you *phone verify* your Kaggle account before starting, it's necessary for the codelabs.
 
 - Want to have an *interactive conversation* ? Try adding the whitepapers to *NotebookLM* . 
