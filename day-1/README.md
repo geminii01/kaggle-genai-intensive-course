@@ -18,7 +18,7 @@
     
     - *[Prompting fundamentals](https://www.kaggle.com/code/hongjaemin/day-1-prompting)*
     
-    - *Evaluation and structured data*
+    - *[Evaluation and structured data](https://www.kaggle.com/code/hongjaemin/day-1-evaluation-and-structured-output)*
 
 - Make sure you *phone verify* your Kaggle account before starting, it's necessary for the codelabs.
 

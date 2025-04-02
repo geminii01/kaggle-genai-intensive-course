@@ -1,4 +1,4 @@
-# 5-Day Gen AI Intensive Course 🤗
+# 5-Day Gen AI Intensive Course with Google 🤗
 
 ### Day 1 👉 [Here](./day-1/README.md)
 
