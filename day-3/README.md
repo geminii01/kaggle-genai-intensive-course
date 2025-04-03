@@ -10,9 +10,9 @@
 
 - Complete these codelabs on Kaggle:
 
-    - *[Talk]()* to a database with function calling.
+    - *[Talk](https://www.kaggle.com/code/hongjaemin/day-3-function-calling-with-the-gemini-api)* to a database with function calling.
     
-    - *[Build]()* an agentic ordering system in LangGraph.
+    - *[Build](https://www.kaggle.com/code/hongjaemin/day-3-building-an-agent-with-langgraph)* an agentic ordering system in LangGraph.
 
 ### [Optional] Advanced 3b - "Agents Companion":
 
@@ -27,3 +27,9 @@
 Learn to build sophisticated AI agents by understanding their core components and the iterative development process. You'll also learn more about advanced agentic architectures and approaches such as multi-agent systems, agent evaluation and more.
 
 The codelabs cover how to connect LLMs to existing systems and to the real world. Learn about function calling by giving SQL tools to a chatbot (including an example using Gemini 2.0's *[Live API](https://ai.google.dev/gemini-api/docs/live?hl=ko)*), and learn how to build a LangGraph agent that takes orders in a café.
+
+## TODO
+
+- 카페 로직 수정 (노드 추가 및 수정)
+
+- 카페 UI 구현 (게임으로 구현해보기!)
