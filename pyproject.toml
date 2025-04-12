@@ -1,0 +1,18 @@
+[project]
+name = "kaggle-genai-intensive-course"
+version = "0.1.0"
+description = "[Kaggle] 5-Day Gen AI Intensive Course with Google"
+authors = [
+    {name = "geminii01",email = "jjaemni159@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "agent-starter-pack (>=0.2.3,<0.3.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
