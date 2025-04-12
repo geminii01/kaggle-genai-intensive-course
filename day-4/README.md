@@ -10,7 +10,7 @@
 
 - Complete these codelabs on Kaggle:
 
-    - *[Tune]()* a Gemini model for a custom task
+    - *[Tune](https://www.kaggle.com/code/hongjaemin/day-4-fine-tuning-a-custom-model)* a Gemini model for a custom task
 
     - *[Use]()* Google Search data in generation
 
