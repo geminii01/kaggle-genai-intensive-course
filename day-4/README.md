@@ -12,7 +12,7 @@
 
     - *[Tune](https://www.kaggle.com/code/hongjaemin/day-4-fine-tuning-a-custom-model)* a Gemini model for a custom task
 
-    - *[Use]()* Google Search data in generation
+    - *[Use](https://www.kaggle.com/code/hongjaemin/day-4-google-search-grounding)* Google Search data in generation
 
 - Want to have an *interactive conversation* ? Try adding the whitepaper to *NotebookLM* .
 
