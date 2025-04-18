@@ -1,14 +1,102 @@
 {
     "Kimchijjigae": {
         "name": "김치찌개 (Kimchijjigae)",
-        "desc": "신김치를 이용한 국물요리다. 김치의 양념을 털어내고 돼지고기나 어패류, 두부, 굵게 썬 파 등을 함께 넣어 얼큰하게 끓인 음식이다. (A spicy stew made with sour kimchi, fatty pork, shellfish, and chunks of bean curd and green onion. It is served hot with steamed rice.)"
+        "desc": "신김치를 이용한 국물요리다. 김치의 양념을 털어내고 돼지고기나 어패류, 두부, 굵게 썬 파 등을 함께 넣어 얼큰하게 끓인 음식이다. (A spicy stew made with sour kimchi, fatty pork, shellfish, and chunks of bean curd and green onion. It is served hot with steamed rice.)",
+        "recipe": {
+            "how_many_people": 4,
+            "ingredients": [
+                "Ripe Cabbage Kimchi (for broth)",
+                "Pork Belly",
+                "Cooking Oil",
+                "Water (500ml)",
+                "Tofu",
+                "Green Onion",
+                "Soy Sauce (for broth)",
+                "Sugar",
+                "Salt"
+            ],
+            "quantity": [
+                "100g",
+                "200g",
+                "4Tbsp",
+                "1L",
+                "300g",
+                "45g",
+                "2Tbsp",
+                "1Tbsp",
+                "a little"
+            ],
+            "preparation_ingredients": "1. Prepare well-fermented Ripe Cabbage Kimchi (for broth) and cut them into 4cm pieces.\n2. Slice the Pork Belly thinly across the grain and cut into 4cm pieces.\n3. Cut the Tofu into 4x3x1cm thick pieces.\n4. Slice the Green Onion into 3cm long pieces.\n",
+            "cooking_method": "1. In a large saucepan, heat the Cooking Oil over high heat, stir-fry the Pork Belly until browned. Add the Kimchi and continue stir-frying.\n2. Add Water into the saucepan and simmer for 20 minutes. When the Kimchi is tender, add the Tofu, Green Onion, Sugar and Soy Sauce. Cook for 10 more minutes. Season to taste with additional Salt if necessary.\n",
+            "tips": "Anchovy broth is sometimes used instead of pork or beef. Also, cook it as little or as much according to your flavor preference."
+        }
     },
     "Bulgogi": {
         "name": "불고기 (Bulgogi)",
-        "desc": "간장, 꿀, 다진 파, 마늘, 깨소금, 후춧가루 등으로 만든 양념장에 소고기를 재웠다가 불고기판에 올려 구워 먹는다. 자작한 국물에 밥을 비벼 먹어도 일품이다. (Bulgogi is prepared with beef that has been marinated in soy sauce, honey, minced green onion, garlic, sesame seeds, and pepper, and then grilled. The excess liquid can be mixed with rice, which tastes as good as the bulgogi itself.)"
+        "desc": "간장, 꿀, 다진 파, 마늘, 깨소금, 후춧가루 등으로 만든 양념장에 소고기를 재웠다가 불고기판에 올려 구워 먹는다. 자작한 국물에 밥을 비벼 먹어도 일품이다. (Bulgogi is prepared with beef that has been marinated in soy sauce, honey, minced green onion, garlic, sesame seeds, and pepper, and then grilled. The excess liquid can be mixed with rice, which tastes as good as the bulgogi itself.)",
+        "recipe": {
+            "how_many_people": 4,
+            "ingredients": [
+                "Beef Sirloin",
+                "Onion",
+                "Shiitake Mushroom",
+                "Green Onion",
+                "Cooking Oil",
+                "Soy Sauce (for side dishes)",
+                "Sugar",
+                "Garlic",
+                "Sesame Seed Oil",
+                "Black Pepper",
+                "Ground Sesame Seed",
+                "Pear",
+                "Cheongju"
+            ],
+            "quantity": [
+                "500g",
+                "200g",
+                "90g",
+                "60g",
+                "1Tbsp",
+                "5Tbsp",
+                "3Tbsp",
+                "1Tbsp",
+                "1Tbsp",
+                "0.5Tbsp",
+                "1Tbsp",
+                "150g",
+                "2Tbsp"
+            ],
+            "preparation_ingredients": "1. Cut the Beef Sirloin into thin slices 0.2cm thick across the grain, or have butcher slice meat for you. If necessary, cut into smaller bite-size pieces. Pat meat dry with paper towels to remove excess blood.\n2. Cut the Onion into long thin slices.\n3. Cut the Shiitake Mushroom into thin slices.\n4. Slice the Green Onion into 4cm long pieces.\n5. Grate the pear and combine with all seasonings of the marinade for beef and mix well in a big bowl.\n6. Add the beef to the marinade and toss meat so marinade coats all of the meat. Let it stand about 20 minutes.\n7. Add Onion, Green Onion and Shiitake Mushroom and mix well.\n",
+            "cooking_method": "Pan fry the beef in a small amount of cooking oil until tender over the high heat.",
+            "tips": "In general, bulgogi is made from ribeye sirloin, tenderloin or strip loin. Add fruits juices such as pears or apples to the marinade sauce to make the meat more tender."
+        }
     },
     "Tteokbokki": {
         "name": "떡볶이 (Tteokbokki)",
-        "desc": "한입 크기로 썬 가래떡이나 가늘게 뽑은 떡볶이용 떡에 채소, 어묵을 함께 넣고 고추장 양념으로 볶은 음식이다. (Sliced rice cake bar (garaetteok) or thin rice cake sticks(Tteokbokkitteok) stir-fried in a spicy gochujang sauce with vegetables and fish cakes.)"
+        "desc": "한입 크기로 썬 가래떡이나 가늘게 뽑은 떡볶이용 떡에 채소, 어묵을 함께 넣고 고추장 양념으로 볶은 음식이다. (Sliced rice cake bar (garaetteok) or thin rice cake sticks(Tteokbokkitteok) stir-fried in a spicy gochujang sauce with vegetables and fish cakes.)",
+        "recipe": {
+            "how_many_people": 4,
+            "ingredients": [
+                "Rice Cake",
+                "Fish Cake",
+                "Water (500ml)",
+                "Gochujang",
+                "Soy Sauce (for side dishes)",
+                "Sugar",
+                "Starch Syrup"
+            ],
+            "quantity": [
+                "500g",
+                "150g",
+                "360ml",
+                "3Tbsp",
+                "0.5Tbsp",
+                "2Tbsp",
+                "1Tbsp"
+            ],
+            "preparation_ingredients": "1. Rinse the soft rice cake sticks and drain. If the rice cake is hard, blanch in boiling water until soft.\n2. Cut the fish cakes into 5x2.5cm strips. Place the fish cake strips in a sieve and pour the boiling water over them for degreasing.\n",
+            "cooking_method": "1. In a saucepan, add Water, Gochujang, Soy Sauce, Sugar and Starch Syrup and mix them together.\n2. Bring the sauce pan to a medium heat, and cook the rice cakes, stir occasionally with a wooden spoon.\n3. Add fish cakes, and continue cooking until sauce thickens.\n",
+            "tips": "Use a rich brew of anchovies and kelp instead of water to make the dish tastier. More gochut-garu (red chili pepper powder) and additional ingredients such as onion, carrot, and green onion can be added if a spicier taste is preferred."
+        }
     }
 }
