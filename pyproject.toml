@@ -9,10 +9,21 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.12,<3.14"
 dependencies = [
-    "agent-starter-pack (>=0.2.3,<0.3.0)"
+    "agent-starter-pack (>=0.2.3,<0.3.0)",
+    "langgraph (>=0.3.30,<0.4.0)",
+    "langchain-google-genai (>=2.1.2,<3.0.0)",
+    "kagglehub (>=0.3.11,<0.4.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "google-genai (>=1.10.0,<2.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "openpyxl (>=3.1.5,<4.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
