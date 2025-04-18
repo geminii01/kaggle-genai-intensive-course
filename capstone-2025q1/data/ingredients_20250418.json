@@ -1,0 +1,1497 @@
+{
+    "Vegetables": {
+        "Garlic": {
+            "desc": "한국 요리의 필수품! 알싸하면서도 익히면 달큰한 맛이 나며, 음식의 잡내를 잡고 풍미를 더해줘요. (An essential in Korean cooking! Pungent raw, sweet when cooked, it removes unwanted odors and adds deep flavor.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "vegetable-garlic-0",
+                    "name": "Fresh Garlic",
+                    "brand": "Organic Choice",
+                    "quantity": "100g",
+                    "price": 2.5,
+                    "rating": 2.3,
+                    "reviewCount": 95
+                },
+                {
+                    "id": "vegetable-garlic-1",
+                    "name": "Fresh Garlic",
+                    "brand": "Farmers Market",
+                    "quantity": "2kg",
+                    "price": 9.2,
+                    "rating": 1.8,
+                    "reviewCount": 55
+                },
+                {
+                    "id": "vegetable-garlic-2",
+                    "name": "Fresh Garlic",
+                    "brand": "Organic Choice",
+                    "quantity": "100g",
+                    "price": 1.2,
+                    "rating": 3.3,
+                    "reviewCount": 4
+                },
+                {
+                    "id": "vegetable-garlic-3",
+                    "name": "Organic Garlic",
+                    "brand": "Farmers Market",
+                    "quantity": "2kg",
+                    "price": 8.9,
+                    "rating": 3.0,
+                    "reviewCount": 58
+                },
+                {
+                    "id": "vegetable-garlic-4",
+                    "name": "Premium Garlic",
+                    "brand": "Organic Choice",
+                    "quantity": "100g",
+                    "price": 2.5,
+                    "rating": 3.9,
+                    "reviewCount": 44
+                }
+            ]
+        },
+        "Shiitake Mushroom": {
+            "desc": "특유의 깊은 향과 감칠맛이 일품이에요. 쫄깃한 식감이 살아있어 볶음, 찌개 등 다양하게 활용돼요. (Excellent for its unique deep aroma and rich umami. Its chewy texture works well in stir-fries, broth, and more.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "vegetable-shiitakemushroom-0",
+                    "name": "Premium Shiitake Mushroom",
+                    "brand": "Green Valley",
+                    "quantity": "200g",
+                    "price": 1.4,
+                    "rating": 1.9,
+                    "reviewCount": 49
+                },
+                {
+                    "id": "vegetable-shiitakemushroom-1",
+                    "name": "Fresh Shiitake Mushroom",
+                    "brand": "Farmers Market",
+                    "quantity": "300g",
+                    "price": 4.7,
+                    "rating": 2.4,
+                    "reviewCount": 6
+                },
+                {
+                    "id": "vegetable-shiitakemushroom-2",
+                    "name": "Local Shiitake Mushroom",
+                    "brand": "Nature's Best",
+                    "quantity": "1kg",
+                    "price": 7.4,
+                    "rating": 1.8,
+                    "reviewCount": 38
+                },
+                {
+                    "id": "vegetable-shiitakemushroom-3",
+                    "name": "Premium Shiitake Mushroom",
+                    "brand": "Fresh Farm",
+                    "quantity": "1kg",
+                    "price": 7.6,
+                    "rating": 1.7,
+                    "reviewCount": 30
+                },
+                {
+                    "id": "vegetable-shiitakemushroom-4",
+                    "name": "Premium Shiitake Mushroom",
+                    "brand": "Fresh Farm",
+                    "quantity": "100g",
+                    "price": 2.7,
+                    "rating": 2.8,
+                    "reviewCount": 59
+                }
+            ]
+        },
+        "Oyster Mushroom": {
+            "desc": "부드럽고 촉촉한 식감과 은은한 향이 특징이에요. 다른 재료와 잘 어울려 맛을 해치지 않고 풍성하게 만들어요. (Features a soft, moist texture and subtle fragrance. Pairs well with other ingredients, adding richness without overpowering.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "vegetable-oystermushroom-0",
+                    "name": "Premium Oyster Mushroom",
+                    "brand": "Organic Choice",
+                    "quantity": "200g",
+                    "price": 1.7,
+                    "rating": 3.8,
+                    "reviewCount": 90
+                },
+                {
+                    "id": "vegetable-oystermushroom-1",
+                    "name": "Fresh Oyster Mushroom",
+                    "brand": "Farmers Market",
+                    "quantity": "1kg",
+                    "price": 8.9,
+                    "rating": 4.1,
+                    "reviewCount": 21
+                },
+                {
+                    "id": "vegetable-oystermushroom-2",
+                    "name": "Local Oyster Mushroom",
+                    "brand": "Healthy Harvest",
+                    "quantity": "500g",
+                    "price": 3.5,
+                    "rating": 3.9,
+                    "reviewCount": 29
+                },
+                {
+                    "id": "vegetable-oystermushroom-3",
+                    "name": "Premium Oyster Mushroom",
+                    "brand": "Fresh Farm",
+                    "quantity": "100g",
+                    "price": 1.5,
+                    "rating": 4.3,
+                    "reviewCount": 52
+                },
+                {
+                    "id": "vegetable-oystermushroom-4",
+                    "name": "Premium Oyster Mushroom",
+                    "brand": "Farmers Market",
+                    "quantity": "100g",
+                    "price": 1.4,
+                    "rating": 4.6,
+                    "reviewCount": 41
+                }
+            ]
+        },
+        "Green Onion": {
+            "desc": "시원하고 알싸한 향으로 음식의 느끼함을 잡아주고 개운한 맛을 더해요. 국물 요리에 들어가면 시원함이 배가 돼요. (Its refreshing, sharp aroma cuts through richness and adds a clean taste. Great in soups for extra freshness.)",
+            "what_to_use": [
+                "Kimchijjigae",
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "vegetable-greenonion-0",
+                    "name": "Organic Green Onion",
+                    "brand": "Healthy Harvest",
+                    "quantity": "2kg",
+                    "price": 8.5,
+                    "rating": 3.1,
+                    "reviewCount": 34
+                },
+                {
+                    "id": "vegetable-greenonion-1",
+                    "name": "Organic Green Onion",
+                    "brand": "Farmers Market",
+                    "quantity": "200g",
+                    "price": 2.5,
+                    "rating": 2.4,
+                    "reviewCount": 75
+                },
+                {
+                    "id": "vegetable-greenonion-2",
+                    "name": "Local Green Onion",
+                    "brand": "Organic Choice",
+                    "quantity": "1kg",
+                    "price": 8.2,
+                    "rating": 5.0,
+                    "reviewCount": 18
+                },
+                {
+                    "id": "vegetable-greenonion-3",
+                    "name": "Local Green Onion",
+                    "brand": "Fresh Farm",
+                    "quantity": "100g",
+                    "price": 2.5,
+                    "rating": 2.0,
+                    "reviewCount": 21
+                },
+                {
+                    "id": "vegetable-greenonion-4",
+                    "name": "Local Green Onion",
+                    "brand": "Nature's Best",
+                    "quantity": "1kg",
+                    "price": 7.2,
+                    "rating": 3.6,
+                    "reviewCount": 60
+                }
+            ]
+        },
+        "Onion": {
+            "desc": "생으로 먹으면 맵지만 익히면 단맛과 감칠맛이 우러나와 요리의 베이스로 많이 사용돼요. (Pungent raw, but releases sweetness and savory notes (umami) when cooked, often used as a flavor base.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "vegetable-onion-0",
+                    "name": "Premium Onion",
+                    "brand": "Fresh Farm",
+                    "quantity": "1kg",
+                    "price": 9.6,
+                    "rating": 3.9,
+                    "reviewCount": 15
+                },
+                {
+                    "id": "vegetable-onion-1",
+                    "name": "Premium Onion",
+                    "brand": "Green Valley",
+                    "quantity": "2kg",
+                    "price": 8.0,
+                    "rating": 3.0,
+                    "reviewCount": 59
+                },
+                {
+                    "id": "vegetable-onion-2",
+                    "name": "Fresh Onion",
+                    "brand": "Green Valley",
+                    "quantity": "2kg",
+                    "price": 9.6,
+                    "rating": 4.9,
+                    "reviewCount": 98
+                },
+                {
+                    "id": "vegetable-onion-3",
+                    "name": "Organic Onion",
+                    "brand": "Healthy Harvest",
+                    "quantity": "1kg",
+                    "price": 9.7,
+                    "rating": 2.5,
+                    "reviewCount": 82
+                },
+                {
+                    "id": "vegetable-onion-4",
+                    "name": "Organic Onion",
+                    "brand": "Organic Choice",
+                    "quantity": "200g",
+                    "price": 1.7,
+                    "rating": 3.4,
+                    "reviewCount": 100
+                }
+            ]
+        }
+    },
+    "Fruits": {
+        "Pear": {
+            "desc": "시원하고 아삭한 식감에 달콤한 과즙이 풍부해요. 고기를 연하게 하고 은은한 단맛을 더할 때 사용해요. (Cool and crisp with abundant sweet juice. Used to tenderize meat and add subtle sweetness, especially in marinades like Bulgogi.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "fruit-pear-0",
+                    "name": "Fresh Pear",
+                    "brand": "Juice Shop",
+                    "quantity": "20ea",
+                    "price": 17.6,
+                    "rating": 1.9,
+                    "reviewCount": 47
+                },
+                {
+                    "id": "fruit-pear-1",
+                    "name": "Premium Pear",
+                    "brand": "Local Fruit",
+                    "quantity": "3ea",
+                    "price": 3.1,
+                    "rating": 4.8,
+                    "reviewCount": 11
+                },
+                {
+                    "id": "fruit-pear-2",
+                    "name": "Local Pear",
+                    "brand": "Local Fruit",
+                    "quantity": "1ea",
+                    "price": 1,
+                    "rating": 4.2,
+                    "reviewCount": 17
+                },
+                {
+                    "id": "fruit-pear-3",
+                    "name": "Local Pear",
+                    "brand": "Local Fruit",
+                    "quantity": "20ea",
+                    "price": 16.3,
+                    "rating": 4.6,
+                    "reviewCount": 55
+                },
+                {
+                    "id": "fruit-pear-4",
+                    "name": "Organic Pear",
+                    "brand": "Fruit Paradise",
+                    "quantity": "20ea",
+                    "price": 21.0,
+                    "rating": 4.0,
+                    "reviewCount": 52
+                }
+            ]
+        },
+        "Apple": {
+            "desc": "아삭아삭 씹는 맛이 좋고 새콤달콤한 맛이 특징이에요. 그냥 먹어도 맛있고 샐러드나 디저트에 활용돼요. (Satisfyingly crisp with a characteristic sweet-tart flavor. Delicious fresh or in salads and desserts.)",
+            "what_to_use": [],
+            "ingredients": [
+                {
+                    "id": "fruit-apple-0",
+                    "name": "Premium Apple",
+                    "brand": "Organic Fruit",
+                    "quantity": "10ea",
+                    "price": 22.2,
+                    "rating": 1.9,
+                    "reviewCount": 29
+                },
+                {
+                    "id": "fruit-apple-1",
+                    "name": "Fresh Apple",
+                    "brand": "Local Fruit",
+                    "quantity": "5ea",
+                    "price": 3.0,
+                    "rating": 2.3,
+                    "reviewCount": 29
+                },
+                {
+                    "id": "fruit-apple-2",
+                    "name": "Fresh Apple",
+                    "brand": "Juice Shop",
+                    "quantity": "1ea",
+                    "price": 1,
+                    "rating": 2.3,
+                    "reviewCount": 5
+                },
+                {
+                    "id": "fruit-apple-3",
+                    "name": "Premium Apple",
+                    "brand": "Local Fruit",
+                    "quantity": "1ea",
+                    "price": 1,
+                    "rating": 2.3,
+                    "reviewCount": 86
+                },
+                {
+                    "id": "fruit-apple-4",
+                    "name": "Local Apple",
+                    "brand": "Local Fruit",
+                    "quantity": "3ea",
+                    "price": 4.1,
+                    "rating": 3.5,
+                    "reviewCount": 32
+                }
+            ]
+        },
+        "Strawberry": {
+            "desc": "상큼하고 달콤한 맛과 향긋한 향이 매력적이에요. 비타민C가 풍부해요. (Attractive bright, sweet taste and lovely fragrance. Rich in Vitamin C.)",
+            "what_to_use": [],
+            "ingredients": [
+                {
+                    "id": "fruit-strawberry-0",
+                    "name": "Local Strawberry",
+                    "brand": "Juice Shop",
+                    "quantity": "10ea",
+                    "price": 16.5,
+                    "rating": 3.8,
+                    "reviewCount": 46
+                },
+                {
+                    "id": "fruit-strawberry-1",
+                    "name": "Local Strawberry",
+                    "brand": "Juice Shop",
+                    "quantity": "10ea",
+                    "price": 18.7,
+                    "rating": 3.9,
+                    "reviewCount": 83
+                },
+                {
+                    "id": "fruit-strawberry-2",
+                    "name": "Fresh Strawberry",
+                    "brand": "Organic Fruit",
+                    "quantity": "1ea",
+                    "price": 1,
+                    "rating": 4.0,
+                    "reviewCount": 14
+                },
+                {
+                    "id": "fruit-strawberry-3",
+                    "name": "Organic Strawberry",
+                    "brand": "Organic Fruit",
+                    "quantity": "3ea",
+                    "price": 3.4,
+                    "rating": 2.0,
+                    "reviewCount": 24
+                },
+                {
+                    "id": "fruit-strawberry-4",
+                    "name": "Premium Strawberry",
+                    "brand": "Juice Shop",
+                    "quantity": "10ea",
+                    "price": 17.0,
+                    "rating": 3.1,
+                    "reviewCount": 71
+                }
+            ]
+        }
+    },
+    "Meats": {
+        "Pork Belly": {
+            "desc": "고소한 지방과 쫄깃한 살코기의 조화가 일품이에요. 구워 먹어도 맛있고, 찌개에 넣으면 깊은 국물 맛을 내줘요. (A fantastic mix of savory fat and chewy meat. Delicious grilled, and adds rich depth to stew broths.)",
+            "what_to_use": [
+                "Kimchijjigae"
+            ],
+            "ingredients": [
+                {
+                    "id": "meat-porkbelly-0",
+                    "name": "Fresh Pork Belly",
+                    "brand": "Beef Master",
+                    "quantity": "100g",
+                    "price": 6.3,
+                    "rating": 4.9,
+                    "reviewCount": 97
+                },
+                {
+                    "id": "meat-porkbelly-1",
+                    "name": "Organic Pork Belly",
+                    "brand": "Local Meat",
+                    "quantity": "200g",
+                    "price": 5.8,
+                    "rating": 2.2,
+                    "reviewCount": 52
+                },
+                {
+                    "id": "meat-porkbelly-2",
+                    "name": "Fresh Pork Belly",
+                    "brand": "Local Meat",
+                    "quantity": "200g",
+                    "price": 5.8,
+                    "rating": 2.4,
+                    "reviewCount": 59
+                },
+                {
+                    "id": "meat-porkbelly-3",
+                    "name": "Premium Pork Belly",
+                    "brand": "Local Meat",
+                    "quantity": "500g",
+                    "price": 9.1,
+                    "rating": 2.0,
+                    "reviewCount": 38
+                },
+                {
+                    "id": "meat-porkbelly-4",
+                    "name": "Organic Pork Belly",
+                    "brand": "Beef Master",
+                    "quantity": "100g",
+                    "price": 6.2,
+                    "rating": 4.1,
+                    "reviewCount": 8
+                }
+            ]
+        },
+        "Ground Beef": {
+            "desc": "부드러운 식감과 고소한 육향이 특징이에요. 볶음밥, 미트볼 등 다양한 요리에 활용하기 좋아요. (Features a soft texture and savory beef flavor. Versatile for use in fried rice, meatballs, and more.)",
+            "what_to_use": [],
+            "ingredients": [
+                {
+                    "id": "meat-groundbeef-0",
+                    "name": "Fresh Ground Beef",
+                    "brand": "Pork Paradise",
+                    "quantity": "1kg",
+                    "price": 18.8,
+                    "rating": 1.7,
+                    "reviewCount": 66
+                },
+                {
+                    "id": "meat-groundbeef-1",
+                    "name": "Fresh Ground Beef",
+                    "brand": "Beef Master",
+                    "quantity": "200g",
+                    "price": 5.1,
+                    "rating": 3.9,
+                    "reviewCount": 31
+                },
+                {
+                    "id": "meat-groundbeef-2",
+                    "name": "Local Ground Beef",
+                    "brand": "Pork Paradise",
+                    "quantity": "100g",
+                    "price": 6.9,
+                    "rating": 3.5,
+                    "reviewCount": 6
+                },
+                {
+                    "id": "meat-groundbeef-3",
+                    "name": "Fresh Ground Beef",
+                    "brand": "Beef & Pork",
+                    "quantity": "500g",
+                    "price": 9.0,
+                    "rating": 4.8,
+                    "reviewCount": 27
+                },
+                {
+                    "id": "meat-groundbeef-4",
+                    "name": "Premium Ground Beef",
+                    "brand": "Pork Paradise",
+                    "quantity": "200g",
+                    "price": 5.5,
+                    "rating": 3.9,
+                    "reviewCount": 39
+                }
+            ]
+        },
+        "Beef Sirloin": {
+            "desc": "부드러운 육질과 풍부한 육즙, 고소한 맛이 특징이에요. 불고기, 스테이크 등 구이 요리에 잘 어울려요. (Known for its tender texture, rich juices, and savory taste. Excellent for grilling, like in Bulgogi or steaks.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "meat-beefsirloin-0",
+                    "name": "Local Beef Sirloin",
+                    "brand": "Beef Master",
+                    "quantity": "300g",
+                    "price": 9.8,
+                    "rating": 1.5,
+                    "reviewCount": 80
+                },
+                {
+                    "id": "meat-beefsirloin-1",
+                    "name": "Fresh Beef Sirloin",
+                    "brand": "Beef & Pork",
+                    "quantity": "100g",
+                    "price": 6.1,
+                    "rating": 2.0,
+                    "reviewCount": 45
+                },
+                {
+                    "id": "meat-beefsirloin-2",
+                    "name": "Fresh Beef Sirloin",
+                    "brand": "Pork Paradise",
+                    "quantity": "200g",
+                    "price": 5.7,
+                    "rating": 3.0,
+                    "reviewCount": 70
+                },
+                {
+                    "id": "meat-beefsirloin-3",
+                    "name": "Premium Beef Sirloin",
+                    "brand": "Beef Master",
+                    "quantity": "1kg",
+                    "price": 22.9,
+                    "rating": 3.8,
+                    "reviewCount": 71
+                },
+                {
+                    "id": "meat-beefsirloin-4",
+                    "name": "Premium Beef Sirloin",
+                    "brand": "Pork Paradise",
+                    "quantity": "2kg",
+                    "price": 15.8,
+                    "rating": 2.4,
+                    "reviewCount": 14
+                }
+            ]
+        }
+    },
+    "Kimchi": {
+        "Ripe Cabbage Kimchi (for broth)": {
+            "desc": "푹 익어 깊은 감칠맛과 시큼한 맛이 특징이에요. 찌개를 끓이면 칼칼하고 시원한 국물 맛을 내줘요. (Deeply fermented with complex umami and distinct sourness. Creates a spicy and refreshing broth in stews like Kimchijjigae.)",
+            "what_to_use": [
+                "Kimchijjigae"
+            ],
+            "ingredients": [
+                {
+                    "id": "kimchi-ripecabbagekimchi(forbroth)-0",
+                    "name": "Organic Ripe Cabbage Kimchi (for broth)",
+                    "brand": "Bibiho",
+                    "quantity": "2kg",
+                    "price": 47.8,
+                    "rating": 4.0,
+                    "reviewCount": 27
+                },
+                {
+                    "id": "kimchi-ripecabbagekimchi(forbroth)-1",
+                    "name": "Premium Ripe Cabbage Kimchi (for broth)",
+                    "brand": "Bibiho",
+                    "quantity": "2kg",
+                    "price": 47.5,
+                    "rating": 1.8,
+                    "reviewCount": 55
+                },
+                {
+                    "id": "kimchi-ripecabbagekimchi(forbroth)-2",
+                    "name": "Premium Ripe Cabbage Kimchi (for broth)",
+                    "brand": "Bibiho",
+                    "quantity": "1kg",
+                    "price": 30.0,
+                    "rating": 3.7,
+                    "reviewCount": 34
+                },
+                {
+                    "id": "kimchi-ripecabbagekimchi(forbroth)-3",
+                    "name": "Organic Ripe Cabbage Kimchi (for broth)",
+                    "brand": "OurStore",
+                    "quantity": "2kg",
+                    "price": 50.5,
+                    "rating": 3.5,
+                    "reviewCount": 15
+                },
+                {
+                    "id": "kimchi-ripecabbagekimchi(forbroth)-4",
+                    "name": "Fresh Ripe Cabbage Kimchi (for broth)",
+                    "brand": "OurStore",
+                    "quantity": "1kg",
+                    "price": 35.5,
+                    "rating": 3.5,
+                    "reviewCount": 19
+                }
+            ]
+        },
+        "Cabbage Kimchi (for side dishes)": {
+            "desc": "아삭한 식감과 매콤하면서 시원한 맛이 좋아요. 밥반찬으로 먹거나 라면과 함께 먹으면 잘 어울려요. (Crisp texture with a spicy, refreshing taste. Great as a side dish (banchan) or paired with ramen.)",
+            "what_to_use": [],
+            "ingredients": [
+                {
+                    "id": "kimchi-cabbagekimchi(forsidedishes)-0",
+                    "name": "Local Cabbage Kimchi (for side dishes)",
+                    "brand": "OurStore",
+                    "quantity": "100g",
+                    "price": 5.1,
+                    "rating": 4.6,
+                    "reviewCount": 6
+                },
+                {
+                    "id": "kimchi-cabbagekimchi(forsidedishes)-1",
+                    "name": "Premium Cabbage Kimchi (for side dishes)",
+                    "brand": "Bibiho",
+                    "quantity": "100g",
+                    "price": 6.4,
+                    "rating": 2.7,
+                    "reviewCount": 72
+                },
+                {
+                    "id": "kimchi-cabbagekimchi(forsidedishes)-2",
+                    "name": "Local Cabbage Kimchi (for side dishes)",
+                    "brand": "Bibiho",
+                    "quantity": "300g",
+                    "price": 8.5,
+                    "rating": 4.5,
+                    "reviewCount": 23
+                },
+                {
+                    "id": "kimchi-cabbagekimchi(forsidedishes)-3",
+                    "name": "Local Cabbage Kimchi (for side dishes)",
+                    "brand": "OurStore",
+                    "quantity": "100g",
+                    "price": 5.4,
+                    "rating": 4.2,
+                    "reviewCount": 53
+                },
+                {
+                    "id": "kimchi-cabbagekimchi(forsidedishes)-4",
+                    "name": "Organic Cabbage Kimchi (for side dishes)",
+                    "brand": "Bibiho",
+                    "quantity": "200g",
+                    "price": 5.3,
+                    "rating": 2.8,
+                    "reviewCount": 5
+                }
+            ]
+        }
+    },
+    "Seasonings": {
+        "Soy Sauce (for side dishes)": {
+            "desc": "짠맛과 감칠맛이 균형을 이루어 무침, 조림 등 반찬의 간을 맞출 때 주로 사용해요. (Balanced salty and savory (umami) flavors. Primarily used for seasoning side dishes (banchan) like seasoned vegetables (namul) or braised items.)",
+            "what_to_use": [
+                "Bulgogi",
+                "Tteokbokki"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-soysauce(forsidedishes)-0",
+                    "name": "Local Soy Sauce (for side dishes)",
+                    "brand": "Jempio",
+                    "quantity": "200g",
+                    "price": 5.4,
+                    "rating": 2.7,
+                    "reviewCount": 30
+                },
+                {
+                    "id": "seasoning-soysauce(forsidedishes)-1",
+                    "name": "Organic Soy Sauce (for side dishes)",
+                    "brand": "Jempio",
+                    "quantity": "100g",
+                    "price": 6.3,
+                    "rating": 2.6,
+                    "reviewCount": 9
+                },
+                {
+                    "id": "seasoning-soysauce(forsidedishes)-2",
+                    "name": "Premium Soy Sauce (for side dishes)",
+                    "brand": "Jempio",
+                    "quantity": "300g",
+                    "price": 8.9,
+                    "rating": 3.9,
+                    "reviewCount": 69
+                },
+                {
+                    "id": "seasoning-soysauce(forsidedishes)-3",
+                    "name": "Premium Soy Sauce (for side dishes)",
+                    "brand": "Jempio",
+                    "quantity": "100g",
+                    "price": 5.2,
+                    "rating": 2.1,
+                    "reviewCount": 34
+                },
+                {
+                    "id": "seasoning-soysauce(forsidedishes)-4",
+                    "name": "Fresh Soy Sauce (for side dishes)",
+                    "brand": "Jempio",
+                    "quantity": "100g",
+                    "price": 6.2,
+                    "rating": 4.0,
+                    "reviewCount": 41
+                }
+            ]
+        },
+        "Soy Sauce (for broth)": {
+            "desc": "맑고 깔끔한 짠맛과 은은한 단맛이 특징이에요. 국이나 찌개의 간을 맞추는 데 사용돼요. (Clear, clean saltiness with a subtle sweetness. Used for seasoning soups and stews.)",
+            "what_to_use": [
+                "Kimchijjigae"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-soysauce(forbroth)-0",
+                    "name": "Local Soy Sauce (for broth)",
+                    "brand": "HCJ",
+                    "quantity": "1kg",
+                    "price": 22.9,
+                    "rating": 2.8,
+                    "reviewCount": 74
+                },
+                {
+                    "id": "seasoning-soysauce(forbroth)-1",
+                    "name": "Organic Soy Sauce (for broth)",
+                    "brand": "Jempio",
+                    "quantity": "300g",
+                    "price": 7.1,
+                    "rating": 1.5,
+                    "reviewCount": 69
+                },
+                {
+                    "id": "seasoning-soysauce(forbroth)-2",
+                    "name": "Organic Soy Sauce (for broth)",
+                    "brand": "Saechandle",
+                    "quantity": "300g",
+                    "price": 8.3,
+                    "rating": 4.7,
+                    "reviewCount": 80
+                },
+                {
+                    "id": "seasoning-soysauce(forbroth)-3",
+                    "name": "Premium Soy Sauce (for broth)",
+                    "brand": "Saechandle",
+                    "quantity": "2kg",
+                    "price": 21.8,
+                    "rating": 4.7,
+                    "reviewCount": 65
+                },
+                {
+                    "id": "seasoning-soysauce(forbroth)-4",
+                    "name": "Premium Soy Sauce (for broth)",
+                    "brand": "Jempio",
+                    "quantity": "2kg",
+                    "price": 18.3,
+                    "rating": 3.9,
+                    "reviewCount": 71
+                }
+            ]
+        },
+        "Gochujang": {
+            "desc": "매콤하면서도 짭짤하고 단맛이 어우러진 한국의 대표 발효 장이에요. 떡볶이, 찌개, 비빔밥 등 매운맛을 낼 때 필수적이에요. (Korea's iconic fermented chili paste - spicy, savory, and slightly sweet. Essential for adding heat to dishes like Tteokbokki, stews, and Bibimbap.)",
+            "what_to_use": [
+                "Tteokbokki"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-gochujang-0",
+                    "name": "Organic Gochujang",
+                    "brand": "Jempio",
+                    "quantity": "200g",
+                    "price": 5.8,
+                    "rating": 3.9,
+                    "reviewCount": 23
+                },
+                {
+                    "id": "seasoning-gochujang-1",
+                    "name": "Premium Gochujang",
+                    "brand": "HCJ",
+                    "quantity": "500g",
+                    "price": 8.6,
+                    "rating": 2.6,
+                    "reviewCount": 27
+                },
+                {
+                    "id": "seasoning-gochujang-2",
+                    "name": "Local Gochujang",
+                    "brand": "Jempio",
+                    "quantity": "1kg",
+                    "price": 19.9,
+                    "rating": 3.1,
+                    "reviewCount": 57
+                },
+                {
+                    "id": "seasoning-gochujang-3",
+                    "name": "Organic Gochujang",
+                    "brand": "Saechandle",
+                    "quantity": "1kg",
+                    "price": 18.8,
+                    "rating": 2.1,
+                    "reviewCount": 11
+                },
+                {
+                    "id": "seasoning-gochujang-4",
+                    "name": "Premium Gochujang",
+                    "brand": "Saechandle",
+                    "quantity": "1kg",
+                    "price": 20.3,
+                    "rating": 2.7,
+                    "reviewCount": 97
+                }
+            ]
+        },
+        "Ground Sesame Seed": {
+            "desc": "참깨를 볶아 빻아 고소한 향과 맛이 아주 진해요. 음식의 마지막에 뿌려 풍미를 더해요. (Roasted and ground sesame seeds with a rich, nutty aroma and flavor. Sprinkled on top of dishes for extra flavor and garnish.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-groundsesameseed-0",
+                    "name": "Organic Ground Sesame Seed",
+                    "brand": "HCJ",
+                    "quantity": "2kg",
+                    "price": 17.5,
+                    "rating": 2.0,
+                    "reviewCount": 6
+                },
+                {
+                    "id": "seasoning-groundsesameseed-1",
+                    "name": "Organic Ground Sesame Seed",
+                    "brand": "HCJ",
+                    "quantity": "500g",
+                    "price": 8.8,
+                    "rating": 3.1,
+                    "reviewCount": 81
+                },
+                {
+                    "id": "seasoning-groundsesameseed-2",
+                    "name": "Organic Ground Sesame Seed",
+                    "brand": "Jempio",
+                    "quantity": "2kg",
+                    "price": 20.6,
+                    "rating": 2.9,
+                    "reviewCount": 19
+                },
+                {
+                    "id": "seasoning-groundsesameseed-3",
+                    "name": "Fresh Ground Sesame Seed",
+                    "brand": "HCJ",
+                    "quantity": "100g",
+                    "price": 6.6,
+                    "rating": 2.1,
+                    "reviewCount": 90
+                },
+                {
+                    "id": "seasoning-groundsesameseed-4",
+                    "name": "Local Ground Sesame Seed",
+                    "brand": "HCJ",
+                    "quantity": "100g",
+                    "price": 6.1,
+                    "rating": 3.1,
+                    "reviewCount": 60
+                }
+            ]
+        },
+        "Starch Syrup": {
+            "desc": "단맛과 함께 음식에 윤기를 더해줘요. 조림이나 볶음 요리의 마무리에 사용하면 먹음직스러워 보여요. (Adds sweetness and a glossy sheen. Used at the end of cooking stir-fries or braises to make them look appetizing.)",
+            "what_to_use": [
+                "Tteokbokki"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-starchsyrup-0",
+                    "name": "Premium Starch Syrup",
+                    "brand": "Saechandle",
+                    "quantity": "500g",
+                    "price": 8.8,
+                    "rating": 4.6,
+                    "reviewCount": 55
+                },
+                {
+                    "id": "seasoning-starchsyrup-1",
+                    "name": "Local Starch Syrup",
+                    "brand": "Jempio",
+                    "quantity": "200g",
+                    "price": 6.5,
+                    "rating": 3.1,
+                    "reviewCount": 97
+                },
+                {
+                    "id": "seasoning-starchsyrup-2",
+                    "name": "Organic Starch Syrup",
+                    "brand": "Saechandle",
+                    "quantity": "2kg",
+                    "price": 17.2,
+                    "rating": 3.2,
+                    "reviewCount": 31
+                },
+                {
+                    "id": "seasoning-starchsyrup-3",
+                    "name": "Premium Starch Syrup",
+                    "brand": "Jempio",
+                    "quantity": "500g",
+                    "price": 7.2,
+                    "rating": 2.3,
+                    "reviewCount": 43
+                },
+                {
+                    "id": "seasoning-starchsyrup-4",
+                    "name": "Premium Starch Syrup",
+                    "brand": "HCJ",
+                    "quantity": "1kg",
+                    "price": 15.6,
+                    "rating": 2.3,
+                    "reviewCount": 89
+                }
+            ]
+        },
+        "Sugar": {
+            "desc": "가장 기본적인 단맛을 내는 조미료예요. 음식의 맛을 부드럽게 하고 다른 맛과 조화를 이루도록 도와줘요. (Basic sweetener. Softens the overall taste and helps balance other flavors in a dish.)",
+            "what_to_use": [
+                "Kimchijjigae",
+                "Bulgogi",
+                "Tteokbokki"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-sugar-0",
+                    "name": "Organic Sugar",
+                    "brand": "Jempio",
+                    "quantity": "2kg",
+                    "price": 16.7,
+                    "rating": 2.9,
+                    "reviewCount": 70
+                },
+                {
+                    "id": "seasoning-sugar-1",
+                    "name": "Local Sugar",
+                    "brand": "Jempio",
+                    "quantity": "500g",
+                    "price": 7.2,
+                    "rating": 2.9,
+                    "reviewCount": 99
+                },
+                {
+                    "id": "seasoning-sugar-2",
+                    "name": "Fresh Sugar",
+                    "brand": "HCJ",
+                    "quantity": "1kg",
+                    "price": 18.0,
+                    "rating": 4.8,
+                    "reviewCount": 39
+                },
+                {
+                    "id": "seasoning-sugar-3",
+                    "name": "Local Sugar",
+                    "brand": "Saechandle",
+                    "quantity": "500g",
+                    "price": 8.6,
+                    "rating": 3.4,
+                    "reviewCount": 78
+                },
+                {
+                    "id": "seasoning-sugar-4",
+                    "name": "Organic Sugar",
+                    "brand": "Jempio",
+                    "quantity": "500g",
+                    "price": 7.7,
+                    "rating": 3.2,
+                    "reviewCount": 50
+                }
+            ]
+        },
+        "Salt": {
+            "desc": "음식의 기본적인 짠맛을 내는 역할을 해요. 재료 본연의 맛을 살리고 감칠맛을 끌어올려 줘요. (Provides fundamental saltiness. Enhances the natural flavors of ingredients and draws out umami.)",
+            "what_to_use": [
+                "Kimchijjigae"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-salt-0",
+                    "name": "Premium Salt",
+                    "brand": "Jempio",
+                    "quantity": "2kg",
+                    "price": 20.4,
+                    "rating": 4.0,
+                    "reviewCount": 60
+                },
+                {
+                    "id": "seasoning-salt-1",
+                    "name": "Organic Salt",
+                    "brand": "Jempio",
+                    "quantity": "1kg",
+                    "price": 19.3,
+                    "rating": 3.6,
+                    "reviewCount": 85
+                },
+                {
+                    "id": "seasoning-salt-2",
+                    "name": "Fresh Salt",
+                    "brand": "HCJ",
+                    "quantity": "100g",
+                    "price": 6.3,
+                    "rating": 4.5,
+                    "reviewCount": 24
+                },
+                {
+                    "id": "seasoning-salt-3",
+                    "name": "Fresh Salt",
+                    "brand": "HCJ",
+                    "quantity": "300g",
+                    "price": 8.1,
+                    "rating": 3.1,
+                    "reviewCount": 44
+                },
+                {
+                    "id": "seasoning-salt-4",
+                    "name": "Local Salt",
+                    "brand": "Jempio",
+                    "quantity": "300g",
+                    "price": 9.3,
+                    "rating": 2.4,
+                    "reviewCount": 11
+                }
+            ]
+        },
+        "Cooking Oil": {
+            "desc": "재료를 볶거나 부칠 때 사용하며, 음식에 고소한 풍미와 부드러움을 더해줘요. (Used for sautéing or pan-frying. Adds richness and prevents sticking.)",
+            "what_to_use": [
+                "Kimchijjigae"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-cookingoil-0",
+                    "name": "Local Cooking Oil",
+                    "brand": "HCJ",
+                    "quantity": "100g",
+                    "price": 6.5,
+                    "rating": 5.0,
+                    "reviewCount": 45
+                },
+                {
+                    "id": "seasoning-cookingoil-1",
+                    "name": "Organic Cooking Oil",
+                    "brand": "Saechandle",
+                    "quantity": "2kg",
+                    "price": 15.5,
+                    "rating": 1.6,
+                    "reviewCount": 4
+                },
+                {
+                    "id": "seasoning-cookingoil-2",
+                    "name": "Organic Cooking Oil",
+                    "brand": "Saechandle",
+                    "quantity": "200g",
+                    "price": 6.7,
+                    "rating": 2.0,
+                    "reviewCount": 17
+                },
+                {
+                    "id": "seasoning-cookingoil-3",
+                    "name": "Local Cooking Oil",
+                    "brand": "HCJ",
+                    "quantity": "2kg",
+                    "price": 15.9,
+                    "rating": 3.1,
+                    "reviewCount": 33
+                },
+                {
+                    "id": "seasoning-cookingoil-4",
+                    "name": "Premium Cooking Oil",
+                    "brand": "Saechandle",
+                    "quantity": "200g",
+                    "price": 6.2,
+                    "rating": 4.0,
+                    "reviewCount": 100
+                }
+            ]
+        },
+        "Sesame Seed Oil": {
+            "desc": "볶은 참깨를 압착해 만들어 특유의 매우 고소한 향과 맛이 특징이에요. 무침이나 비빔밥, 요리 마지막에 풍미를 더할 때 사용해요. (Pressed from roasted sesame seeds, with a distinctively strong, nutty aroma and taste. Used in seasoned vegetables (namul), Bibimbap, or drizzled at the end for flavor.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-sesameseedoil-0",
+                    "name": "Organic Sesame Seed Oil",
+                    "brand": "HCJ",
+                    "quantity": "300g",
+                    "price": 7.3,
+                    "rating": 4.8,
+                    "reviewCount": 74
+                },
+                {
+                    "id": "seasoning-sesameseedoil-1",
+                    "name": "Local Sesame Seed Oil",
+                    "brand": "HCJ",
+                    "quantity": "500g",
+                    "price": 9.8,
+                    "rating": 1.8,
+                    "reviewCount": 89
+                },
+                {
+                    "id": "seasoning-sesameseedoil-2",
+                    "name": "Organic Sesame Seed Oil",
+                    "brand": "Jempio",
+                    "quantity": "100g",
+                    "price": 6.4,
+                    "rating": 4.5,
+                    "reviewCount": 77
+                },
+                {
+                    "id": "seasoning-sesameseedoil-3",
+                    "name": "Fresh Sesame Seed Oil",
+                    "brand": "Jempio",
+                    "quantity": "1kg",
+                    "price": 21.3,
+                    "rating": 3.4,
+                    "reviewCount": 85
+                },
+                {
+                    "id": "seasoning-sesameseedoil-4",
+                    "name": "Premium Sesame Seed Oil",
+                    "brand": "Jempio",
+                    "quantity": "100g",
+                    "price": 6.0,
+                    "rating": 1.5,
+                    "reviewCount": 54
+                }
+            ]
+        },
+        "Cheongju": {
+            "desc": "맑은 술로, 요리에 사용하면 잡내를 제거하고 은은한 단맛과 풍미를 더해줘요. (Clear rice wine. Used in cooking to remove unwanted odors (especially from meat/fish) and add subtle sweetness and depth.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-cheongju-0",
+                    "name": "Local Cheongju",
+                    "brand": "Jempio",
+                    "quantity": "100g",
+                    "price": 5.9,
+                    "rating": 3.7,
+                    "reviewCount": 59
+                },
+                {
+                    "id": "seasoning-cheongju-1",
+                    "name": "Organic Cheongju",
+                    "brand": "Saechandle",
+                    "quantity": "500g",
+                    "price": 7.5,
+                    "rating": 4.9,
+                    "reviewCount": 35
+                },
+                {
+                    "id": "seasoning-cheongju-2",
+                    "name": "Local Cheongju",
+                    "brand": "Saechandle",
+                    "quantity": "500g",
+                    "price": 8.3,
+                    "rating": 3.6,
+                    "reviewCount": 42
+                },
+                {
+                    "id": "seasoning-cheongju-3",
+                    "name": "Organic Cheongju",
+                    "brand": "Jempio",
+                    "quantity": "100g",
+                    "price": 5.6,
+                    "rating": 2.4,
+                    "reviewCount": 60
+                },
+                {
+                    "id": "seasoning-cheongju-4",
+                    "name": "Local Cheongju",
+                    "brand": "Jempio",
+                    "quantity": "300g",
+                    "price": 7.1,
+                    "rating": 2.1,
+                    "reviewCount": 28
+                }
+            ]
+        },
+        "Black Pepper": {
+            "desc": "톡 쏘는 매운맛과 향긋한 향으로 고기의 누린내를 잡고 음식의 맛을 깔끔하게 마무리해줘요. (Pungent heat and fragrant aroma help mask gamey smells and provide a clean finish to dishes.)",
+            "what_to_use": [
+                "Bulgogi"
+            ],
+            "ingredients": [
+                {
+                    "id": "seasoning-blackpepper-0",
+                    "name": "Premium Black Pepper",
+                    "brand": "Saechandle",
+                    "quantity": "300g",
+                    "price": 8.0,
+                    "rating": 4.0,
+                    "reviewCount": 36
+                },
+                {
+                    "id": "seasoning-blackpepper-1",
+                    "name": "Fresh Black Pepper",
+                    "brand": "HCJ",
+                    "quantity": "1kg",
+                    "price": 22.6,
+                    "rating": 2.3,
+                    "reviewCount": 53
+                },
+                {
+                    "id": "seasoning-blackpepper-2",
+                    "name": "Local Black Pepper",
+                    "brand": "Saechandle",
+                    "quantity": "1kg",
+                    "price": 21.1,
+                    "rating": 3.2,
+                    "reviewCount": 92
+                },
+                {
+                    "id": "seasoning-blackpepper-3",
+                    "name": "Local Black Pepper",
+                    "brand": "HCJ",
+                    "quantity": "500g",
+                    "price": 9.4,
+                    "rating": 2.5,
+                    "reviewCount": 52
+                },
+                {
+                    "id": "seasoning-blackpepper-4",
+                    "name": "Organic Black Pepper",
+                    "brand": "Jempio",
+                    "quantity": "300g",
+                    "price": 9.0,
+                    "rating": 3.2,
+                    "reviewCount": 68
+                }
+            ]
+        }
+    },
+    "Processed Foods": {
+        "Tofu": {
+            "desc": "콩으로 만든 부드럽고 담백한 맛이 특징이에요. 찌개에 넣으면 국물 맛이 배어 더욱 맛있어져요. (Made from soybeans with a soft texture and mild, clean flavor. Absorbs broth flavors beautifully in stews.)",
+            "what_to_use": [
+                "Kimchijjigae"
+            ],
+            "ingredients": [
+                {
+                    "id": "processedfood-tofu-0",
+                    "name": "Premium Tofu",
+                    "brand": "Saechandle",
+                    "quantity": "200g",
+                    "price": 5.5,
+                    "rating": 2.7,
+                    "reviewCount": 90
+                },
+                {
+                    "id": "processedfood-tofu-1",
+                    "name": "Local Tofu",
+                    "brand": "HCJ",
+                    "quantity": "200g",
+                    "price": 4.5,
+                    "rating": 1.9,
+                    "reviewCount": 25
+                },
+                {
+                    "id": "processedfood-tofu-2",
+                    "name": "Premium Tofu",
+                    "brand": "Saechandle",
+                    "quantity": "100g",
+                    "price": 3.7,
+                    "rating": 2.1,
+                    "reviewCount": 28
+                },
+                {
+                    "id": "processedfood-tofu-3",
+                    "name": "Local Tofu",
+                    "brand": "Saechandle",
+                    "quantity": "200g",
+                    "price": 5.1,
+                    "rating": 3.6,
+                    "reviewCount": 13
+                },
+                {
+                    "id": "processedfood-tofu-4",
+                    "name": "Organic Tofu",
+                    "brand": "HCJ",
+                    "quantity": "200g",
+                    "price": 4.3,
+                    "rating": 2.6,
+                    "reviewCount": 91
+                }
+            ]
+        },
+        "Fish Cake": {
+            "desc": "생선 살로 만들어 쫄깃한 식감과 감칠맛이 좋아요. 떡볶이, 어묵탕 등 다양한 분식과 반찬에 사용돼요. (Made from fish paste, offering a chewy texture and savory (umami) taste. Used in popular dishes like Tteokbokki and fish cake soup (Eomuk-tang).)",
+            "what_to_use": [
+                "Tteokbokki"
+            ],
+            "ingredients": [
+                {
+                    "id": "processedfood-fishcake-0",
+                    "name": "Organic Fish Cake",
+                    "brand": "HCJ",
+                    "quantity": "200g",
+                    "price": 4.1,
+                    "rating": 3.4,
+                    "reviewCount": 90
+                },
+                {
+                    "id": "processedfood-fishcake-1",
+                    "name": "Organic Fish Cake",
+                    "brand": "Jempio",
+                    "quantity": "300g",
+                    "price": 6.4,
+                    "rating": 1.9,
+                    "reviewCount": 2
+                },
+                {
+                    "id": "processedfood-fishcake-2",
+                    "name": "Premium Fish Cake",
+                    "brand": "Jempio",
+                    "quantity": "200g",
+                    "price": 4.7,
+                    "rating": 2.1,
+                    "reviewCount": 7
+                },
+                {
+                    "id": "processedfood-fishcake-3",
+                    "name": "Premium Fish Cake",
+                    "brand": "HCJ",
+                    "quantity": "200g",
+                    "price": 4.2,
+                    "rating": 2.9,
+                    "reviewCount": 10
+                },
+                {
+                    "id": "processedfood-fishcake-4",
+                    "name": "Fresh Fish Cake",
+                    "brand": "Saechandle",
+                    "quantity": "100g",
+                    "price": 3.1,
+                    "rating": 4.8,
+                    "reviewCount": 11
+                }
+            ]
+        },
+        "Rice Cake": {
+            "desc": "쌀로 만들어 쫀득쫀득한 식감이 매력적이에요. 떡볶이나 떡국 등 다양한 요리의 주재료로 쓰여요. (Made from rice flour with an appealingly chewy, glutinous texture. A key ingredient in dishes like Tteokbokki and rice cake soup (Tteokguk).)",
+            "what_to_use": [
+                "Tteokbokki"
+            ],
+            "ingredients": [
+                {
+                    "id": "processedfood-ricecake-0",
+                    "name": "Organic Rice Cake",
+                    "brand": "Jempio",
+                    "quantity": "15ea",
+                    "price": 6.1,
+                    "rating": 3.6,
+                    "reviewCount": 80
+                },
+                {
+                    "id": "processedfood-ricecake-1",
+                    "name": "Organic Rice Cake",
+                    "brand": "Jempio",
+                    "quantity": "30ea",
+                    "price": 9.8,
+                    "rating": 2.5,
+                    "reviewCount": 76
+                },
+                {
+                    "id": "processedfood-ricecake-2",
+                    "name": "Local Rice Cake",
+                    "brand": "HCJ",
+                    "quantity": "20ea",
+                    "price": 8.1,
+                    "rating": 3.6,
+                    "reviewCount": 95
+                },
+                {
+                    "id": "processedfood-ricecake-3",
+                    "name": "Fresh Rice Cake",
+                    "brand": "Jempio",
+                    "quantity": "15ea",
+                    "price": 6.3,
+                    "rating": 3.8,
+                    "reviewCount": 21
+                },
+                {
+                    "id": "processedfood-ricecake-4",
+                    "name": "Organic Rice Cake",
+                    "brand": "HCJ",
+                    "quantity": "15ea",
+                    "price": 6.1,
+                    "rating": 1.5,
+                    "reviewCount": 58
+                }
+            ]
+        }
+    },
+    "Others": {
+        "Water (500ml)": {
+            "desc": "찌개, 국 등의 국물을 만들거나 재료를 삶을 때 필수적이에요. (Essential for making broths for stews and soups, or for boiling ingredients.)",
+            "what_to_use": [
+                "Kimchijjigae",
+                "Tteokbokki"
+            ],
+            "ingredients": [
+                {
+                    "id": "other-water(500ml)-0",
+                    "name": "Local Water (500ml)",
+                    "brand": "B",
+                    "quantity": "2ea",
+                    "price": 2.0,
+                    "rating": 4.0,
+                    "reviewCount": 90
+                },
+                {
+                    "id": "other-water(500ml)-1",
+                    "name": "Local Water (500ml)",
+                    "brand": "B",
+                    "quantity": "1ea",
+                    "price": 1.7,
+                    "rating": 4.3,
+                    "reviewCount": 81
+                },
+                {
+                    "id": "other-water(500ml)-2",
+                    "name": "Organic Water (500ml)",
+                    "brand": "A",
+                    "quantity": "2ea",
+                    "price": 2.1,
+                    "rating": 3.8,
+                    "reviewCount": 35
+                },
+                {
+                    "id": "other-water(500ml)-3",
+                    "name": "Organic Water (500ml)",
+                    "brand": "B",
+                    "quantity": "1ea",
+                    "price": 1.1,
+                    "rating": 3.6,
+                    "reviewCount": 73
+                },
+                {
+                    "id": "other-water(500ml)-4",
+                    "name": "Premium Water (500ml)",
+                    "brand": "C",
+                    "quantity": "2ea",
+                    "price": 2.1,
+                    "rating": 2.6,
+                    "reviewCount": 52
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Kimchijjigae": {
+        "name": "김치찌개 (Kimchijjigae)",
+        "desc": "신김치를 이용한 국물요리다. 김치의 양념을 털어내고 돼지고기나 어패류, 두부, 굵게 썬 파 등을 함께 넣어 얼큰하게 끓인 음식이다. (A spicy stew made with sour kimchi, fatty pork, shellfish, and chunks of bean curd and green onion. It is served hot with steamed rice.)"
+    },
+    "Bulgogi": {
+        "name": "불고기 (Bulgogi)",
+        "desc": "간장, 꿀, 다진 파, 마늘, 깨소금, 후춧가루 등으로 만든 양념장에 소고기를 재웠다가 불고기판에 올려 구워 먹는다. 자작한 국물에 밥을 비벼 먹어도 일품이다. (Bulgogi is prepared with beef that has been marinated in soy sauce, honey, minced green onion, garlic, sesame seeds, and pepper, and then grilled. The excess liquid can be mixed with rice, which tastes as good as the bulgogi itself.)"
+    },
+    "Tteokbokki": {
+        "name": "떡볶이 (Tteokbokki)",
+        "desc": "한입 크기로 썬 가래떡이나 가늘게 뽑은 떡볶이용 떡에 채소, 어묵을 함께 넣고 고추장 양념으로 볶은 음식이다. (Sliced rice cake bar (garaetteok) or thin rice cake sticks(Tteokbokkitteok) stir-fried in a spicy gochujang sauce with vegetables and fish cakes.)"
+    }
+}
