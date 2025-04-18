@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/dotenv,git,images,jupyternotebooks,python,venv,vim,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=dotenv,git,images,jupyternotebooks,python,venv,vim,macos
 
+### self ###
+*/temp
+
 ### dotenv ###
 .env
 
