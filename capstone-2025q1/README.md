@@ -23,7 +23,7 @@ python ./data-to-sql.py
 
 [![Database Diagram](./assets/dbdiagram_2.png)](https://dbdiagram.io/d/680236c61ca52373f57d7030)
 
-- 데이터베이스는 정보를 체계적으로 정리하기 위해 여러 개의 **표(Table)** 로 데이터를 나누어 저장합니다. 각 표는 특정 주제에 대한 정보만 담고 있고, 서로 필요한 정보를 연결(관계)해서 사용합니다. 이 데이터베이스에는 총 6개의 테이블이 있습니다.<br>The database is designed to organize information systematically by dividing data into multiple **tables**. Each table contains information about a specific topic and uses connections (relationships) to link related information. This database contains a total of 6 tables.
+- 데이터베이스는 정보를 체계적으로 정리하기 위해 여러 개의 **표(Table)** 로 데이터를 나누어 저장합니다. 각 표는 특정 주제에 대한 정보만 담고 있고, 서로 필요한 정보를 연결(관계)해서 사용합니다. 이 데이터베이스에는 총 6개의 테이블이 있습니다.<br>The database is designed to organize information systematically by dividing data into multiple **tables** . Each table contains information about a specific topic and uses connections (relationships) to link related information. This database contains a total of 6 tables.
 
 ## 1. `Recipe` Table
 
@@ -33,7 +33,7 @@ python ./data-to-sql.py
 
 ### Columns (Columns of the table)
 
-- `recipe_id` (TEXT, **PK**): 각 레시피를 구별하는 고유한 **텍스트** 이름표입니다 (예: `"kimchijjigae"`, `"bulgogi"`). 이 값은 절대 중복되지 않으며, 레시피를 식별하는 **기본 키(Primary Key, PK)**입니다.<br>This is a unique **text** identifier (e.g., `"kimchijjigae"`, `"bulgogi"`) to distinguish each recipe. This value is unique and serves as the **primary key (PK)**.
+- `recipe_id` (TEXT, **PK** ): 각 레시피를 구별하는 고유한 **텍스트** 이름표입니다 (예: `"kimchijjigae"`, `"bulgogi"`). 이 값은 절대 중복되지 않으며, 레시피를 식별하는 **기본 키(Primary Key, PK)** 입니다.<br>This is a unique **text** identifier (e.g., `"kimchijjigae"`, `"bulgogi"`) to distinguish each recipe. This value is unique and serves as the **primary key (PK)** .
 
 - `recipe_name` (TEXT): 레시피의 영어/로마자 이름입니다 (현재 스크립트에서는 `recipe_id`와 동일).<br>This is the English/Romanized name of the recipe (currently the same as `recipe_id`).
 
@@ -53,11 +53,11 @@ python ./data-to-sql.py
 
 ### Purpose
 
-- 각 레시피의 **상세 조리 정보**를 저장하는 테이블입니다. 요리할 때 필요한 상세 내용을 담고 있습니다.<br>This table stores **detailed cooking information** for each recipe. It contains the specifics needed when cooking.
+- 각 레시피의 **상세 조리 정보** 를 저장하는 테이블입니다. 요리할 때 필요한 상세 내용을 담고 있습니다.<br>This table stores **detailed cooking information** for each recipe. It contains the specifics needed when cooking.
 
 ### Columns (Columns of the table)
 
-- `recipe_id` (TEXT, **PK**, **FK**): 어떤 레시피에 대한 정보인지를 나타냅니다. `Recipe` 테이블의 `recipe_id`를 참조하는 **외래 키(FK)**이자 **기본 키(PK)**입니다.<br>Indicates which recipe this information is about. It is a **foreign key (FK)** referencing the `recipe_id` in the `Recipe` table and also serves as the **primary key (PK)**.
+- `recipe_id` (TEXT, **PK** , **FK** ): 어떤 레시피에 대한 정보인지를 나타냅니다. `Recipe` 테이블의 `recipe_id`를 참조하는 **외래 키(FK)** 이자 **기본 키(PK)** 입니다.<br>Indicates which recipe this information is about. It is a **foreign key (FK)** referencing the `recipe_id` in the `Recipe` table and also serves as the **primary key (PK)** .
 
 - `how_many_people` (INTEGER): 해당 레시피가 몇 인분인지 나타냅니다 (예: `4`).<br>Indicates how many servings the recipe makes (e.g., `4`).
 
@@ -79,15 +79,15 @@ python ./data-to-sql.py
 
 ### Purpose
 
-- 레시피와 필요한 재료를 연결하고, 각 재료에 대한 **정확한 양과 사용법**을 저장하는 테이블입니다. 이 테이블은 레시피와 식재료 타입 간의 관계를 나타내며, 레시피별로 필요한 재료의 정확한 양을 명시합니다.<br>This table links recipes with their required ingredients and stores the **exact quantity and usage** for each ingredient. It represents the relationship between recipes and ingredient types, specifying the exact amount of each ingredient needed for a recipe.
+- 레시피와 필요한 재료를 연결하고, 각 재료에 대한 **정확한 양과 사용법** 을 저장하는 테이블입니다. 이 테이블은 레시피와 식재료 타입 간의 관계를 나타내며, 레시피별로 필요한 재료의 정확한 양을 명시합니다.<br>This table links recipes with their required ingredients and stores the **exact quantity and usage** for each ingredient. It represents the relationship between recipes and ingredient types, specifying the exact amount of each ingredient needed for a recipe.
 
 ### Columns (Columns of the table)
 
-- `id` (INTEGER, **PK**): 각 행을 구별하는 고유한 **자동 증가** ID입니다. **기본 키(PK)**입니다.<br>This is a unique **auto-incrementing** ID that distinguishes each row. It serves as the **primary key (PK)**.
+- `id` (INTEGER, **PK** ): 각 행을 구별하는 고유한 **자동 증가** ID입니다. **기본 키(PK)** 입니다.<br>This is a unique **auto-incrementing** ID that distinguishes each row. It serves as the **primary key (PK)** .
 
-- `recipe_id` (TEXT, **FK**): 어떤 레시피에 대한 정보인지를 나타냅니다. `Recipe` 테이블의 `recipe_id`를 참조하는 **외래 키(FK)**입니다.<br>Indicates which recipe this entry is about. It is a **foreign key (FK)** referencing `Recipe.recipe_id`.
+- `recipe_id` (TEXT, **FK** ): 어떤 레시피에 대한 정보인지를 나타냅니다. `Recipe` 테이블의 `recipe_id`를 참조하는 **외래 키(FK)** 입니다.<br>Indicates which recipe this entry is about. It is a **foreign key (FK)** referencing `Recipe.recipe_id`.
 
-- `type_id` (TEXT, **FK**): 어떤 재료 종류에 대한 정보인지를 나타냅니다. `IngredientType` 테이블의 `type_id` 값을 참조하는 **외래 키(FK)**입니다.<br>Indicates which ingredient type this entry is about. It is a **foreign key (FK)** referencing `IngredientType.type_id`.
+- `type_id` (TEXT, **FK** ): 어떤 재료 종류에 대한 정보인지를 나타냅니다. `IngredientType` 테이블의 `type_id` 값을 참조하는 **외래 키(FK)** 입니다.<br>Indicates which ingredient type this entry is about. It is a **foreign key (FK)** referencing `IngredientType.type_id`.
 
 - `ingredient_name` (TEXT): 레시피에 사용된 재료의 정확한 이름입니다 (예: `"Beef Sirloin"`, `"Onion"`).<br>The exact name of the ingredient used in the recipe (e.g., `"Beef Sirloin"`, `"Onion"`).
 
@@ -111,11 +111,11 @@ python ./data-to-sql.py
 
 ### Purpose
 
-- 식료품 가게의 상품들을 큰 **분류(카테고리)**로 나누기 위한 테이블입니다. 예를 들어 "채소류", "육류", "조미료류" 같은 큰 그룹 정보를 관리합니다.<br>This table is used to categorize products in a grocery store into large **categories**. For example, it manages information about large groups such as "vegetables", "meats", and "seasonings".
+- 식료품 가게의 상품들을 큰 **분류(카테고리)** 로 나누기 위한 테이블입니다. 예를 들어 "채소류", "육류", "조미료류" 같은 큰 그룹 정보를 관리합니다.<br>This table is used to categorize products in a grocery store into large **categories** . For example, it manages information about large groups such as "vegetables", "meats", and "seasonings".
 
 ### Columns (Columns of the table)
 
-- `category_id` (TEXT, **PK**): 각 카테고리를 구별하는 고유한 **텍스트** 이름표입니다 (예: `"vegetables"`, `"meats"`). **기본 키(PK)**입니다.<br>This is a unique **text** identifier (e.g., `"vegetables"`, `"meats"`) to distinguish each category. This value is unique and serves as the **primary key (PK)**.
+- `category_id` (TEXT, **PK** ): 각 카테고리를 구별하는 고유한 **텍스트** 이름표입니다 (예: `"vegetables"`, `"meats"`). **기본 키(PK)** 입니다.<br>This is a unique **text** identifier (e.g., `"vegetables"`, `"meats"`) to distinguish each category. This value is unique and serves as the **primary key (PK)** .
 
 - `category_name` (TEXT): 화면에 보여줄 카테고리의 실제 이름입니다 (예: `"Vegetables"`).<br>This is the actual name of the category to be displayed on the screen (e.g., `"Vegetables"`).
 
@@ -135,11 +135,11 @@ python ./data-to-sql.py
 
 ### Columns (Columns of the table)
 
-- `type_id` (TEXT, **PK**): 각 식재료 종류를 구별하는 고유한 **텍스트** 이름표입니다 (예: `"garlic"`, `"pork_belly"`). 이름에서 자동으로 생성되며, **기본 키(PK)**입니다.<br>This is a unique **text** identifier (e.g., `"garlic"`, `"pork_belly"`), automatically generated from the name, to distinguish each ingredient type. This value is unique and serves as the **primary key (PK)**.
+- `type_id` (TEXT, **PK** ): 각 식재료 종류를 구별하는 고유한 **텍스트** 이름표입니다 (예: `"garlic"`, `"pork_belly"`). 이름에서 자동으로 생성되며, **기본 키(PK)** 입니다.<br>This is a unique **text** identifier (e.g., `"garlic"`, `"pork_belly"`), automatically generated from the name, to distinguish each ingredient type. This value is unique and serves as the **primary key (PK)** .
 
 - `type_name` (TEXT): 화면에 보여줄 식재료 종류의 이름입니다 (예: `"Garlic"`, `"Pork Belly"`).<br>This is the name of the ingredient type to be displayed on the screen (e.g., `"Garlic"`, `"Pork Belly"`).
 
-- `category_id` (TEXT, **FK**): 이 식재료가 어떤 카테고리에 속하는지를 알려주는 정보입니다. `Category` 테이블의 `category_id` 값을 참조하는 **외래 키(Foreign Key, FK)**입니다. 예를 들어, "garlic"의 `category_id`가 "vegetables" 라면, 마늘이 채소류 카테고리에 속한다는 뜻입니다.<br>This indicates which category the ingredient type belongs to. It is a **foreign key (FK)** that references the `category_id` in the `Category` table. For example, if the `category_id` for "garlic" is "vegetables", it means garlic belongs to the vegetables category.
+- `category_id` (TEXT, **FK** ): 이 식재료가 어떤 카테고리에 속하는지를 알려주는 정보입니다. `Category` 테이블의 `category_id` 값을 참조하는 **외래 키(Foreign Key, FK)** 입니다. 예를 들어, "garlic"의 `category_id`가 "vegetables" 라면, 마늘이 채소류 카테고리에 속한다는 뜻입니다.<br>This indicates which category the ingredient type belongs to. It is a **foreign key (FK)** that references the `category_id` in the `Category` table. For example, if the `category_id` for "garlic" is "vegetables", it means garlic belongs to the vegetables category.
 
 - `description` (TEXT): 해당 식재료 종류에 대한 설명입니다 (한글/영어 포함).<br>This is a description of the type of ingredient (includes Korean and English).
 
@@ -161,13 +161,13 @@ python ./data-to-sql.py
 
 ### Purpose
 
-- 실제로 **판매하는 개별 식재료 상품**들의 상세 정보를 저장합니다. (예: "A사 깐마늘 100g", "B사 유기농 배 1개")<br>This table stores detailed information about **individual ingredient products** available for sale (e.g., "Brand A Peeled Garlic 100g", "Brand B Organic Pear 1ea").
+- 실제로 **판매하는 개별 식재료 상품** 들의 상세 정보를 저장합니다. (예: "A사 깐마늘 100g", "B사 유기농 배 1개")<br>This table stores detailed information about **individual ingredient products** available for sale (e.g., "Brand A Peeled Garlic 100g", "Brand B Organic Pear 1ea").
 
 ### Columns (Columns of the table)
 
-- `product_id` (TEXT, **PK**): 각 판매 상품을 구별하는 고유한 **텍스트** 이름표입니다 (예: `"vegetable-garlic-0"`). **기본 키(PK)**입니다.<br>This is a unique **text** identifier (e.g., `"vegetable-garlic-0"`) to distinguish each product item. This value is unique and serves as the **primary key (PK)**.
+- `product_id` (TEXT, **PK** ): 각 판매 상품을 구별하는 고유한 **텍스트** 이름표입니다 (예: `"vegetable-garlic-0"`). **기본 키(PK)** 입니다.<br>This is a unique **text** identifier (e.g., `"vegetable-garlic-0"`) to distinguish each product item. This value is unique and serves as the **primary key (PK)** .
 
-- `type_id` (TEXT, **FK**): 이 상품이 어떤 **종류**의 식재료인지를 알려줍니다. `IngredientType` 테이블의 `type_id` 값을 참조하는 **외래 키(FK)**입니다 (예: `"garlic"`).<br>Indicates what **type** of ingredient this product is. It is a **foreign key (FK)** referencing the `type_id` in the `IngredientType` table (e.g., `"garlic"`).
+- `type_id` (TEXT, **FK** ): 이 상품이 어떤 **종류** 의 식재료인지를 알려줍니다. `IngredientType` 테이블의 `type_id` 값을 참조하는 **외래 키(FK)** 입니다 (예: `"garlic"`).<br>Indicates what **type** of ingredient this product is. It is a **foreign key (FK)** referencing the `type_id` in the `IngredientType` table (e.g., `"garlic"`).
 
 - `name` (TEXT): 상품의 실제 이름입니다 (예: `"Fresh Garlic"`).<br>This is the actual name of the product (e.g., `"Fresh Garlic"`).
 
