@@ -83,114 +83,114 @@ df.columns = [
 ]
 
 # after checking the df, set up the ingredients
-# recipe_list = [
-#     {
-#         "how_many_people": 4,
-#         "ingredients": [
-#             "Ripe Cabbage Kimchi (for broth)",
-#             "Pork Belly",
-#             "Cooking Oil",
-#             "Water",
-#             "Tofu",
-#             "Green Onion",
-#             "Soy Sauce (for broth)",
-#             "Sugar",
-#             "Salt",
-#         ],
-#         "quantity": [
-#             "100g",
-#             "200g",
-#             "4Tbsp",
-#             "1L",
-#             "300g",
-#             "45g",
-#             "2Tbsp",
-#             "1Tbsp",
-#             "a little",
-#         ],
-#         "preparation_ingredients": """1. Prepare well-fermented Ripe Cabbage Kimchi (for broth) and cut them into 4cm pieces.
-# 2. Slice the Pork Belly thinly across the grain and cut into 4cm pieces.
-# 3. Cut the Tofu into 4x3x1cm thick pieces.
-# 4. Slice the Green Onion into 3cm long pieces.
-# """,
-#         "cooking_method": """1. In a large saucepan, heat the Cooking Oil over high heat, stir-fry the Pork Belly until browned. Add the Kimchi and continue stir-frying.
-# 2. Add Water into the saucepan and simmer for 20 minutes. When the Kimchi is tender, add the Tofu, Green Onion, Sugar and Soy Sauce. Cook for 10 more minutes. Season to taste with additional Salt if necessary.
-# """,
-#         "tips": "Anchovy broth is sometimes used instead of pork or beef. Also, cook it as little or as much according to your flavor preference.",
-#     },
-#     {
-#         "how_many_people": 4,
-#         "ingredients": [
-#             "Beef Sirloin",
-#             "Onion",
-#             "Shiitake Mushroom",
-#             "Green Onion",
-#             "Cooking Oil",
-#             "Soy Sauce (for side dishes)",
-#             "Sugar",
-#             "Garlic",
-#             "Sesame Oil",
-#             "Black Pepper",
-#             "Ground Sesame Seed",
-#             "Pear",
-#             "Cheongju",
-#         ],
-#         "quantity": [
-#             "500g",
-#             "200g",
-#             "90g",
-#             "60g",
-#             "1Tbsp",
-#             "5Tbsp",
-#             "3Tbsp",
-#             "1Tbsp",
-#             "1Tbsp",
-#             "0.5Tbsp",
-#             "1Tbsp",
-#             "150g",
-#             "2Tbsp",
-#         ],
-#         "preparation_ingredients": """1. Cut the Beef Sirloin into thin slices 0.2cm thick across the grain, or have butcher slice meat for you. If necessary, cut into smaller bite-size pieces. Pat meat dry with paper towels to remove excess blood.
-# 2. Cut the Onion into long thin slices.
-# 3. Cut the Shiitake Mushroom into thin slices.
-# 4. Slice the Green Onion into 4cm long pieces.
-# 5. Grate the pear and combine with all seasonings of the marinade for beef and mix well in a big bowl.
-# 6. Add the beef to the marinade and toss meat so marinade coats all of the meat. Let it stand about 20 minutes.
-# 7. Add Onion, Green Onion and Shiitake Mushroom and mix well.
-# """,
-#         "cooking_method": "Pan fry the beef in a small amount of cooking oil until tender over the high heat.",
-#         "tips": "In general, bulgogi is made from ribeye sirloin, tenderloin or strip loin. Add fruits juices such as pears or apples to the marinade sauce to make the meat more tender.",
-#     },
-#     {
-#         "how_many_people": 4,
-#         "ingredients": [
-#             "Rice Cake",
-#             "Fish Cake",
-#             "Water",
-#             "Gochujang",
-#             "Soy Sauce (for side dishes)",
-#             "Sugar",
-#             "Starch Syrup",
-#         ],
-#         "quantity": [
-#             "500g",
-#             "150g",
-#             "360ml",
-#             "3Tbsp",
-#             "0.5Tbsp",
-#             "2Tbsp",
-#             "1Tbsp",
-#         ],
-#         "preparation_ingredients": """1. Rinse the soft rice cake sticks and drain. If the rice cake is hard, blanch in boiling water until soft.
-# 2. Cut the fish cakes into 5x2.5cm strips. Place the fish cake strips in a sieve and pour the boiling water over them for degreasing.
-# """,
-#         "cooking_method": """1. In a saucepan, add Water, Gochujang, Soy Sauce, Sugar and Starch Syrup and mix them together.
-# 2. Bring the sauce pan to a medium heat, and cook the rice cakes, stir occasionally with a wooden spoon.
-# 3. Add fish cakes, and continue cooking until sauce thickens.
-# """,
-#         "tips": "Use a rich brew of anchovies and kelp instead of water to make the dish tastier. More gochut-garu (red chili pepper powder) and additional ingredients such as onion, carrot, and green onion can be added if a spicier taste is preferred.",
-#     },
-# ]
+recipe_list = [
+    {
+        "how_many_people": 4,
+        "ingredients": [
+            "Ripe Cabbage Kimchi (for broth)",
+            "Pork Belly",
+            "Cooking Oil",
+            "Water (500ml)",
+            "Tofu",
+            "Green Onion",
+            "Soy Sauce (for broth)",
+            "Sugar",
+            "Salt",
+        ],
+        "quantity": [
+            "100g",
+            "200g",
+            "4Tbsp",
+            "1L",
+            "300g",
+            "45g",
+            "2Tbsp",
+            "1Tbsp",
+            "a little",
+        ],
+        "preparation_ingredients": """1. Prepare well-fermented Ripe Cabbage Kimchi (for broth) and cut them into 4cm pieces.
+2. Slice the Pork Belly thinly across the grain and cut into 4cm pieces.
+3. Cut the Tofu into 4x3x1cm thick pieces.
+4. Slice the Green Onion into 3cm long pieces.
+""",
+        "cooking_method": """1. In a large saucepan, heat the Cooking Oil over high heat, stir-fry the Pork Belly until browned. Add the Kimchi and continue stir-frying.
+2. Add Water into the saucepan and simmer for 20 minutes. When the Kimchi is tender, add the Tofu, Green Onion, Sugar and Soy Sauce. Cook for 10 more minutes. Season to taste with additional Salt if necessary.
+""",
+        "tips": "Anchovy broth is sometimes used instead of pork or beef. Also, cook it as little or as much according to your flavor preference.",
+    },
+    {
+        "how_many_people": 4,
+        "ingredients": [
+            "Beef Sirloin",
+            "Onion",
+            "Shiitake Mushroom",
+            "Green Onion",
+            "Cooking Oil",
+            "Soy Sauce (for side dishes)",
+            "Sugar",
+            "Garlic",
+            "Sesame Seed Oil",
+            "Black Pepper",
+            "Ground Sesame Seed",
+            "Pear",
+            "Cheongju",
+        ],
+        "quantity": [
+            "500g",
+            "200g",
+            "90g",
+            "60g",
+            "1Tbsp",
+            "5Tbsp",
+            "3Tbsp",
+            "1Tbsp",
+            "1Tbsp",
+            "0.5Tbsp",
+            "1Tbsp",
+            "150g",
+            "2Tbsp",
+        ],
+        "preparation_ingredients": """1. Cut the Beef Sirloin into thin slices 0.2cm thick across the grain, or have butcher slice meat for you. If necessary, cut into smaller bite-size pieces. Pat meat dry with paper towels to remove excess blood.
+2. Cut the Onion into long thin slices.
+3. Cut the Shiitake Mushroom into thin slices.
+4. Slice the Green Onion into 4cm long pieces.
+5. Grate the pear and combine with all seasonings of the marinade for beef and mix well in a big bowl.
+6. Add the beef to the marinade and toss meat so marinade coats all of the meat. Let it stand about 20 minutes.
+7. Add Onion, Green Onion and Shiitake Mushroom and mix well.
+""",
+        "cooking_method": "Pan fry the beef in a small amount of cooking oil until tender over the high heat.",
+        "tips": "In general, bulgogi is made from ribeye sirloin, tenderloin or strip loin. Add fruits juices such as pears or apples to the marinade sauce to make the meat more tender.",
+    },
+    {
+        "how_many_people": 4,
+        "ingredients": [
+            "Rice Cake",
+            "Fish Cake",
+            "Water (500ml)",
+            "Gochujang",
+            "Soy Sauce (for side dishes)",
+            "Sugar",
+            "Starch Syrup",
+        ],
+        "quantity": [
+            "500g",
+            "150g",
+            "360ml",
+            "3Tbsp",
+            "0.5Tbsp",
+            "2Tbsp",
+            "1Tbsp",
+        ],
+        "preparation_ingredients": """1. Rinse the soft rice cake sticks and drain. If the rice cake is hard, blanch in boiling water until soft.
+2. Cut the fish cakes into 5x2.5cm strips. Place the fish cake strips in a sieve and pour the boiling water over them for degreasing.
+""",
+        "cooking_method": """1. In a saucepan, add Water, Gochujang, Soy Sauce, Sugar and Starch Syrup and mix them together.
+2. Bring the sauce pan to a medium heat, and cook the rice cakes, stir occasionally with a wooden spoon.
+3. Add fish cakes, and continue cooking until sauce thickens.
+""",
+        "tips": "Use a rich brew of anchovies and kelp instead of water to make the dish tastier. More gochut-garu (red chili pepper powder) and additional ingredients such as onion, carrot, and green onion can be added if a spicier taste is preferred.",
+    },
+]
 
 recipes = {}
 for idx in range(df.shape[0]):
@@ -199,7 +199,7 @@ for idx in range(df.shape[0]):
     recipes[df.iloc[idx, 0]] = {
         "name": dishName,
         "desc": dishDesc,
-        # "recipe": recipe_list[idx],
+        "recipe": recipe_list[idx],
     }
 
 with open(recipes_path, "w", encoding="utf-8") as f:
