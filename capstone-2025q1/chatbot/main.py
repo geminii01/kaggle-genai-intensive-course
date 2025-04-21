@@ -101,8 +101,10 @@ def run_chat():
             sys.stdout.flush()
 
             # Update the conversation history
-            if final_ai_message:
+            if final_ai_message and final_ai_message.content and final_ai_message.content.strip():
                 conversation_history.append(final_ai_message)
+            else:
+                print("[DEBUG] Skipping adding empty AIMessage to history.")
 
             # Print tool call information (for debugging)
             if tool_calls_made:

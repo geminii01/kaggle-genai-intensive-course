@@ -3,12 +3,15 @@ Tools for the chatbot
 """
 
 from langchain_core.tools import tool
+from langchain_core.messages import ToolMessage
 
+from typing import List, Dict, Any
 from thefuzz import process
 import traceback
 
 from chatbot.data_loader import available_categories, data
 from chatbot.configs import FUZZY_SCORE_THRESHOLD
+from chatbot.state import State
 
 
 # --- Category Search Tools ---
@@ -108,7 +111,7 @@ def search_category_by_type_all() -> dict:
 
     Returns:
         dict: A dictionary containing the result.
-              On success: {'status': 'success', 'categories': ['vegetables', 'fruits', 'meat', ...]}
+              On success: {'status': 'success', 'categories': ['xxxxx', 'yyyyy', 'zzzzz', ...]}
               On failure (no categories available): {'status': 'not_found', 'message': 'No categories are available.'}
               On error: {'status': 'error', 'message': 'Error message'}
     """
@@ -135,76 +138,58 @@ def search_category_by_type_all() -> dict:
 
 # --- Ingredient Search Tools ---
 @tool
-def search_ingredient_by_type(category_type: str) -> dict:
+def search_multiple_ingredients(product_names: List[str]) -> dict:
     """
-    Searches for ingredients by category type and returns all available products within that category.
-    Use this tool when the user asks about available products within a specific category.
+    Searches for information about multiple products at once.
+    Use this tool when the user requests multiple products.
 
     Args:
-        category_type (str): The category type to search for (e.g., 'vegetables', 'fruits', 'dairy').
+        product_names (List[str]): A list of product names to search for (e.g., ["Apple", "Popcorn"])
 
     Returns:
-        dict: A dictionary containing the search results.
-              On success: {'status': 'success', 'products': [list of products]}
-              On failure: {'status': 'not_found', 'message': 'No products found in this category.'}
-              On error: {'status': 'error', 'message': 'Error message'}
+        dict: A dictionary containing the search results for each product.
+              On success: {'status': 'success', 'products': {product_name: product_info, ...}}
+              On partial success: {'status': 'partial', 'found': {...}, 'not_found': [...]}
+              On failure: {'status': 'not_found', 'message': 'Requested products not found.'}
     """
     print(
-        f"\n[INFO] Executing tool: search_ingredient_by_type (Input: {category_type})"
+        f"\n[INFO] Executing tool: search_multiple_ingredients (Products: {product_names})"
     )
-    try:
-        if data is None or data.empty:
-            print("[ERROR] Data is not available. Cannot perform search.")
-            return {
-                "status": "error",
-                "message": "Product data could not be loaded or is empty.",
-            }
 
-        # Search for the category (case-insensitive)
-        category_type_lower = category_type.strip().lower()
+    if not product_names:
+        return {"status": "error", "message": "Product name list is empty."}
 
-        # First, check if the category exists
-        if category_type_lower not in [cat.lower() for cat in available_categories]:
-            # Try fuzzy matching if the category doesn't exist exactly
-            result = process.extractOne(
-                category_type_lower, [cat.lower() for cat in available_categories]
-            )
-            if result and result[1] >= FUZZY_SCORE_THRESHOLD:
-                category_type_lower = result[0]
-                print(f"[INFO] Using fuzzy matched category: {category_type_lower}")
-            else:
-                print(f"[INFO] Category not found: {category_type}")
-                return {
-                    "status": "not_found",
-                    "message": f"Category '{category_type}' not found in our database.",
-                }
+    results = {"found": {}, "not_found": []}
 
-        # Filter data by category (case-insensitive)
-        category_filter = data["category_type"].str.lower() == category_type_lower
-        filtered_data = data[category_filter]
+    for product_name in product_names:
+        # Call the search_ingredient_by_brand function for each product using invoke method
+        product_result = search_ingredient_by_brand.invoke(product_name)
 
-        if filtered_data.empty:
-            print(f"[INFO] No products found in category: {category_type}")
-            return {
-                "status": "not_found",
-                "message": f"No products found in category '{category_type}'.",
-            }
+        if product_result["status"] == "success":
+            # Found the product
+            results["found"][product_name] = product_result
+        else:
+            # Not found the product
+            results["not_found"].append(product_name)
 
-        # Get unique product types in this category
-        products = filtered_data["product_type"].unique().tolist()
-        print(f"[INFO] Found {len(products)} products in category {category_type}")
-
+    # Evaluate the search results
+    if not results["found"]:
+        # Not found all products
         return {
-            "status": "success",
-            "category": category_type_lower,
-            "products": products,
+            "status": "not_found",
+            "message": "Requested products not found.",
+            "not_found": results["not_found"],
         }
-
-    except Exception as e:
-        print(
-            f"[ERROR] Exception during search_ingredient_by_type execution - {e}\n{traceback.format_exc()}"
-        )
-        return {"status": "error", "message": str(e)}
+    elif not results["not_found"]:
+        # Found all products
+        return {"status": "success", "products": results["found"]}
+    else:
+        # Found some products
+        return {
+            "status": "partial",
+            "found": results["found"],
+            "not_found": results["not_found"],
+        }
 
 
 @tool
@@ -215,7 +200,7 @@ def search_ingredient_by_type_all() -> dict:
 
     Returns:
         dict: A dictionary containing the result.
-              On success: {'status': 'success', 'products': {'Vegetables': ['Carrot', 'Broccoli'], 'Fruits': ['Apple', 'Banana'], ...}}
+              On success: {'status': 'success', 'products': {'XXXXX': ['aaaaa', 'bbbbb'], 'YYYYY': ['ccccc', 'ddddd'], ...}}
               On failure: {'status': 'not_found', 'message': 'No products available.'}
               On error: {'status': 'error', 'message': 'Error message'}
     """
@@ -320,19 +305,32 @@ def search_ingredient_by_brand(product_type: str, brand: str = None) -> dict:
                 result = process.extractOne(
                     brand_lower, [b.lower() for b in available_brands]
                 )
-                if result and result[1] >= FUZZY_SCORE_THRESHOLD:
-                    matched_brand = available_brands[
-                        [b.lower() for b in available_brands].index(result[0])
-                    ]
-                    brand_filter = filtered_data["product_brand"] == matched_brand
-                    brand_filtered_data = filtered_data[brand_filter]
-                    print(f"[INFO] Using fuzzy matched brand: {matched_brand}")
+                if result:
+                    best_match, score = result
+                    if score >= FUZZY_SCORE_THRESHOLD:
+                        matched_brand = available_brands[
+                            [b.lower() for b in available_brands].index(best_match)
+                        ]
+                        brand_filter = filtered_data["product_brand"] == matched_brand
+                        brand_filtered_data = filtered_data[brand_filter]
+                        print(f"[INFO] Using fuzzy matched brand: {matched_brand}")
+                    else:
+                        print(
+                            f"[INFO] Brand '{brand}' score too low, suggesting best match '{best_match}' (score {score})"
+                        )
+                        return {
+                            "status": "not_found",
+                            "message": f"Brand '{brand}' not found for product '{product_type}'. Did you mean '{best_match}'?",
+                            "available_brands": available_brands,
+                            "suggested_brand": best_match,
+                            "match_score": score,
+                        }
                 else:
                     print(f"[INFO] Brand not found for product {product_type}: {brand}")
                     return {
                         "status": "not_found",
                         "message": f"Brand '{brand}' not found for product '{product_type}'.",
-                        "available_brands": filtered_data["product_brand"].tolist(),
+                        "available_brands": available_brands,
                     }
 
             # Return the specific product details
@@ -905,55 +903,78 @@ def compare_ingredient_by_review(product_type: str) -> dict:
 
 
 # --- Shopping Cart Tools ---
+# def view_cart(state_dict: dict = None) -> dict:
 @tool
-def view_cart(state_dict: dict = None) -> dict:
+def view_cart() -> dict:
     """
-    Displays the current contents of the shopping cart.
-    Use this tool when the user wants to view their cart or check what items they've added.
-
-    Args:
-        state_dict (dict, optional): The current state dictionary containing cart items.
-                                   This is automatically provided by the system.
-
-    Returns:
-        dict: A dictionary containing the cart contents.
-              On success: {'status': 'success', 'cart_items': [list of items], 'total_price': float}
-              On empty cart: {'status': 'empty', 'message': 'Your cart is empty.'}
-              On error: {'status': 'error', 'message': 'Error message'}
+    Shows the current contents of the shopping cart. (Dummy for LLM tool-call; handled in view_cart_node)
     """
-    print(f"\n[INFO] Executing tool: view_cart")
-    try:
-        # Debug information
-        print(f"[DEBUG] State dict received: {state_dict}")
+    return {
+        "status": "dummy",
+        "message": "view_cart should be handled by view_cart_node!",
+    }
 
-        # If state_dict is None or cart_items is not in state_dict
-        if (
-            not state_dict
-            or "cart_items" not in state_dict
-            or not state_dict["cart_items"]
-        ):
-            print("[INFO] Cart is empty")
-            return {"status": "empty", "message": "Your cart is empty."}
 
-        cart_items = state_dict["cart_items"]
-        total_price = sum(
-            float(item.get("price", 0)) * item.get("quantity", 1) for item in cart_items
-        )
+# def view_cart(state: State) -> dict:
+#     """
+#     Displays the current contents of the shopping cart by directly accessing the graph state.
+#     This function is intended to be called from a dedicated node in the graph, not as a standard LLM tool.
 
-        print(
-            f"[INFO] Found {len(cart_items)} items in cart, total: ${total_price:.2f}"
-        )
-        return {
-            "status": "success",
-            "cart_items": cart_items,
-            "total_price": total_price,
-        }
+#     Args:
+#         state (State): The current graph state containing cart items.
 
-    except Exception as e:
-        print(
-            f"[ERROR] Exception during view_cart execution - {e}\n{traceback.format_exc()}"
-        )
-        return {"status": "error", "message": str(e)}
+#     Returns:
+#         dict: A dictionary containing the cart contents.
+#               On success: {'status': 'success', 'cart_items': [list of items], 'total_price': float, 'item_count': int, 'formatted_total': str}
+#               On empty cart: {'status': 'empty', 'message': 'Your cart is empty.'}
+#               On error: {'status': 'error', 'message': 'Error message'}
+#     """
+#     print(f"\n[INFO] Executing function: view_cart (Accessing State Directly)")
+#     try:
+#         print(f"[DEBUG] Current state received in view_cart: {state}")
+
+#         # Check if the state object or cart_items key/list exists
+#         if not state or "cart_items" not in state or not state["cart_items"]:
+#             print("[INFO] Cart is empty based on state")
+#             return {"status": "empty", "message": "Your cart is empty."}
+
+#         # Cart is not empty, process the information
+#         cart_items = state["cart_items"]
+
+#         # Calculate totals
+#         total_price = sum(
+#             float(item.get("item_total", 0))
+#             for item in cart_items  # Use individual item totals
+#         )
+#         item_count = sum(item.get("quantity", 1) for item in cart_items)
+
+#         # Prepare a formatted cart summary (more detailed)
+#         cart_summary = []
+#         for item in cart_items:
+#             item_summary = {
+#                 "product": f"{item.get('product_brand', 'Unknown')} {item.get('product_type', 'Unknown')}",
+#                 "quantity": item.get("quantity", 1),
+#                 "price_per_unit": f"${item.get('price', 0):.2f}",
+#                 "item_total": f"${item.get('item_total', 0):.2f}",
+#             }
+#             cart_summary.append(item_summary)
+
+#         print(
+#             f"[INFO] Found {len(cart_items)} unique item types ({item_count} total items) in cart, total: ${total_price:.2f}"
+#         )
+#         return {
+#             "status": "success",
+#             "cart_items": cart_summary,  # formatted summary information
+#             "total_price": total_price,
+#             "item_count": item_count,
+#             "formatted_total": f"${total_price:.2f}",
+#         }
+
+#     except Exception as e:
+#         print(
+#             f"[ERROR] Exception during view_cart execution - {e}\n{traceback.format_exc()}"
+#         )
+#         return {"status": "error", "message": str(e)}
 
 
 @tool
@@ -1245,26 +1266,34 @@ def greeting() -> dict:
 @tool
 def fallback() -> dict:
     """
-    Handles unrecognized or unsupported user requests.
-    Use this tool when the chatbot cannot understand or fulfill the user's request.
+    Handles unrecognized user intents or requests for unsupported features.
+    This tool is called when the chatbot cannot understand the user's request
+    or when the request corresponds to a feature that is not implemented.
+    Provides helpful suggestions in English for what the user can try next.
 
     Returns:
-        dict: A dictionary containing fallback information.
-              {'status': 'success', 'fallback_message': fallback message, 'suggestions': list of suggested actions}
+        dict: A dictionary containing fallback information and suggestions.
+              e.g., {'status': 'success', 'fallback_info': {'message': '...', 'suggestions': [...]}}
+              On error: {'status': 'error', 'message': 'Error message'}
     """
     print(f"\n[INFO] Executing tool: fallback")
     try:
         fallback_info = {
-            "fallback_message": "I'm sorry, I don't understand that request or it's not supported yet.",
+            "message": (
+                "I'm sorry, I couldn't quite understand your request, or it might be about a feature I don't support yet. "
+                "Perhaps you could try one of the things I can help with?"
+            ),
             "suggestions": [
-                "Try asking about our product categories",
-                "Search for specific products",
-                "Ask for help to see what I can do",
-                "Check your shopping cart",
+                "🔍 Browse product categories (e.g., 'Show me the vegetable category')",
+                "🔍 Search for specific products (e.g., 'Find Brand A milk')",
+                "🛒 Check your shopping cart (e.g., 'View my cart')",
+                "❓ Ask for help (e.g., 'help', 'how to use')",
             ],
         }
 
-        print(f"[INFO] Fallback provided")
+        print(
+            f"[INFO] Fallback provided with enhanced English message and suggestions."
+        )
         return {"status": "success", "fallback_info": fallback_info}
 
     except Exception as e:
@@ -1280,7 +1309,7 @@ all_tools = [
     search_category_by_type,
     search_category_by_type_all,
     # Ingredient Search Tools
-    search_ingredient_by_type,
+    search_multiple_ingredients,
     search_ingredient_by_type_all,
     search_ingredient_by_brand,
     search_ingredient_by_rating,
